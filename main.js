@@ -1,3 +1,4 @@
+
 var userMsgTemplate = Handlebars.templates['userMessageTmpl'];
 
 var context = { "message": "Pay Rashav $10,000"};
@@ -15,3 +16,10 @@ var whichContext = {
 }
 
 $('#content').append(whichPersonTemplate(whichContext));
+
+
+var okPersonTemplate = Handlebars.templates['okPersonTmpl'];
+
+var okPersonContext = {"person": "John Devivo(Mobile)"};
+
+$('#content').append(okPersonTemplate(okPersonContext));

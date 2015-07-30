@@ -16,6 +16,19 @@ body{
 	border-style: solid;
 
 }
+.userSpeachBubbleMixin{
+	.speachBubbleAfterMixin;
+	border-width: 0px 25px 10px 0px;
+	border-color: @purple_background transparent;
+	left: 95%;
+}
+.responseSpeachBubbleMixin{
+	.speachBubbleAfterMixin;
+	border-width: 15px 0px 0px 15px;
+	border-color: white transparent;
+	right: 98%;
+	top: 0;
+}
 .clearfixMixin{
 	visibility: hidden;
     display: block;
@@ -39,11 +52,7 @@ body{
   	position: relative;	
   	margin-bottom: 20px;
   	&:after{
-  		.speachBubbleAfterMixin;
-		border-width: 0px 25px 10px 0px;
-		border-color: @purple_background transparent;
-		left: 95%;
-
+  		.userSpeachBubbleMixin;
   	}
 }
 .possiblePersonInfo{
@@ -57,12 +66,9 @@ body{
 	color: @purple_text;
 	border-radius: 5px;
 	position: relative;
+	margin-bottom: 20px;
 	&:after{
-		.speachBubbleAfterMixin;
-		border-width: 15px 0px 0px 15px;
-		border-color: white transparent;
-		right: 98%;
-		top: 0;
+		.responseSpeachBubbleMixin;
 	}
 }
 .whichPersonName{
@@ -89,5 +95,18 @@ body{
 	    min-height: 70%;
 	    display: block;
 	    margin: auto;
+	}
+}
+
+.okPerson{
+	text-align: center;
+	width: 200px;
+	background-color: white;
+	border-radius: 5px;
+	padding: 10px 4px;
+	position: relative;
+	margin-bottom: 20px;
+	&:after{
+		.responseSpeachBubbleMixin;
 	}
 }

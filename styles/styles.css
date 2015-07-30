@@ -7,6 +7,25 @@ body {
   display: block;
   border-style: solid;
 }
+.userSpeachBubbleMixin {
+  content: "";
+  position: absolute;
+  display: block;
+  border-style: solid;
+  border-width: 0px 25px 10px 0px;
+  border-color: #837089 transparent;
+  left: 95%;
+}
+.responseSpeachBubbleMixin {
+  content: "";
+  position: absolute;
+  display: block;
+  border-style: solid;
+  border-width: 15px 0px 0px 15px;
+  border-color: white transparent;
+  right: 98%;
+  top: 0;
+}
 .clearfixMixin {
   visibility: hidden;
   display: block;
@@ -48,6 +67,7 @@ body {
   color: #370141;
   border-radius: 5px;
   position: relative;
+  margin-bottom: 20px;
 }
 .whichPerson:after {
   content: "";
@@ -82,4 +102,23 @@ body {
   min-height: 70%;
   display: block;
   margin: auto;
+}
+.okPerson {
+  text-align: center;
+  width: 200px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px 4px;
+  position: relative;
+  margin-bottom: 20px;
+}
+.okPerson:after {
+  content: "";
+  position: absolute;
+  display: block;
+  border-style: solid;
+  border-width: 15px 0px 0px 15px;
+  border-color: white transparent;
+  right: 98%;
+  top: 0;
 }
