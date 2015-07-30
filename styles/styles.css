@@ -106,6 +106,7 @@ body {
 .okPerson {
   text-align: center;
   width: 200px;
+  color: #370141;
   background-color: white;
   border-radius: 5px;
   padding: 10px 4px;
@@ -121,4 +122,51 @@ body {
   border-color: white transparent;
   right: 98%;
   top: 0;
+}
+.isThisA {
+  width: 200px;
+  text-align: center;
+  color: #370141;
+  border-radius: 5px;
+  padding: 10px 15px;
+  position: relative;
+  margin-bottom: 20px;
+  background-color: white;
+}
+.isThisA:before {
+  content: "";
+  position: absolute;
+  display: block;
+  border-style: solid;
+  border-width: 15px 0px 0px 15px;
+  border-color: white transparent;
+  right: 98%;
+  top: 0;
+}
+.isThisA:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.booleanQuery {
+  margin-bottom: 10px;
+}
+.yes {
+  width: 90px;
+  height: 30px;
+  background-color: #9f92a4;
+  float: left;
+  line-height: 30px;
+  cursor: pointer;
+}
+.no {
+  width: 90px;
+  height: 30px;
+  line-height: 30px;
+  background-color: #9f92a4;
+  cursor: pointer;
+  float: right;
 }

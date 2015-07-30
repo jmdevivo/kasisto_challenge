@@ -23,3 +23,9 @@ var okPersonTemplate = Handlebars.templates['okPersonTmpl'];
 var okPersonContext = {"person": "John Devivo(Mobile)"};
 
 $('#content').append(okPersonTemplate(okPersonContext));
+
+var isThisATemplate = Handlebars.templates['isThisATmpl'];
+
+var isThisAContext = { 'query': "recurring payment"};
+
+$('#content').append(isThisATemplate(isThisAContext));
