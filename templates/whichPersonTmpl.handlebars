@@ -1,0 +1,18 @@
+<div class='whichPerson'>
+	<div class='whichPersonName'> Which {{name}}?</div>
+	{{#each people}}
+		<div class='possiblePerson'>
+			<div class='round'>
+				<img class='possiblePersonImage' {{#if this.url}} src={{this.url}} {{else}} src='images/emptyContact.jpg' {{/if}}></img>
+			</div>
+			<div class='possiblePersonInfo'>
+				{{this.contactName}}
+				<br />
+				<span class='personPhoneNumber' >{{this.phoneNumber}}</span>
+			</div>
+		</div>
+	{{/each}}
+	<div id='newPerson' class='possiblePerson'>
+		Add New Payee
+	</div>
+</div>

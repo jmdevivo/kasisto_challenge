@@ -1,0 +1,93 @@
+@background_beige: #f7f2eb;
+@purple_background : #837089;
+@purple_text: #370141;
+@light_purple_text: #a99dad;
+@turquise: #18789e;
+@orange_background: #ffb121;
+
+
+body{
+	font-family: Helvetica, sans-serif;
+}
+.speachBubbleAfterMixin{
+	content: "";
+	position: absolute;
+	display: block;
+	border-style: solid;
+
+}
+.clearfixMixin{
+	visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+#content{
+	background-color: @background_beige;
+	padding: 20px;
+}
+.userMessage{
+	text-align: center;
+	color: white;
+	background-color: @purple_background;
+	width: 175px;
+  	padding: 10px 4px;
+  	border-radius: 5px;
+  	position: relative;	
+  	margin-bottom: 20px;
+  	&:after{
+  		.speachBubbleAfterMixin;
+		border-width: 0px 25px 10px 0px;
+		border-color: @purple_background transparent;
+		left: 95%;
+
+  	}
+}
+.possiblePersonInfo{
+	margin-left: 50px;	
+}
+
+.whichPerson {
+	background-color: white;
+	width: 200px;
+	padding: 10px 15px;
+	color: @purple_text;
+	border-radius: 5px;
+	position: relative;
+	&:after{
+		.speachBubbleAfterMixin;
+		border-width: 15px 0px 0px 15px;
+		border-color: white transparent;
+		right: 98%;
+		top: 0;
+	}
+}
+.whichPersonName{
+	margin-bottom: 10px;
+}
+.personPhoneNumber{
+	color: @light_purple_text;
+}
+
+.possiblePerson{
+	padding: 10px 0px; 
+	border-top: solid 2px @background_beige;
+}
+
+.round{
+	width: 30px;
+	border-radius: 50%;
+	border: solid 1px @background_beige;
+	overflow: hidden;
+	float: left;
+	img {
+		height: 30px;
+	    min-width: 86%;
+	    min-height: 70%;
+	    display: block;
+	    margin: auto;
+	}
+}

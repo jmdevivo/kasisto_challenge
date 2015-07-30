@@ -1,0 +1,45 @@
+body {
+  font-family: Helvetica, sans-serif;
+}
+#content {
+  background-color: #f7f2eb;
+  padding: 20px;
+}
+.userMessage {
+  text-align: center;
+  color: white;
+  background-color: #837089;
+  width: 175px;
+  padding: 10px 4px;
+  border-radius: 5px;
+  position: relative;
+  margin-bottom: 20px;
+}
+.userMessage:after {
+  content: "";
+  position: absolute;
+  border-width: 0px 25px 10px 0px;
+  border-style: solid;
+  border-color: #837089 transparent;
+  display: block;
+  left: 95%;
+}
+.whichPerson {
+  background-color: white;
+  width: 200px;
+  padding: 10px 4px;
+  color: #370141;
+}
+.round {
+  width: 30px;
+  border-radius: 50%;
+  border: solid 1px #f7f2eb;
+  overflow: hidden;
+}
+.round img {
+  height: 30px;
+  min-width: 86%;
+  min-height: 70%;
+  display: block;
+  margin: auto;
+}
