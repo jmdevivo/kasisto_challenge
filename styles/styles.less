@@ -10,6 +10,16 @@
 body{
 	font-family: Helvetica, sans-serif;
 }
+#content{
+	width: 350px;
+	margin: auto;
+	background-color: @background_beige;
+	padding: 20px;
+	&:after{
+		.clearfixMixin;
+
+	}
+}
 .speachBubbleAfterMixin{
 	content: "";
 	position: absolute;
@@ -23,6 +33,7 @@ body{
 	background-color: @purple_button_background;
 	line-height: 30px;
 	cursor: pointer;
+	text-align: center;
 }
 .userSpeachBubbleMixin{
 	.speachBubbleAfterMixin;
@@ -37,6 +48,12 @@ body{
 	right: 98%;
 	top: 0;
 }
+.roundMixin{
+	border-radius: 50%;
+	border: solid 1px @background_beige;
+	overflow: hidden;
+	float: left;
+}
 .clearfixMixin{
 	visibility: hidden;
     display: block;
@@ -46,10 +63,19 @@ body{
     height: 0;
 }
 
-#content{
-	background-color: @background_beige;
-	padding: 20px;
+.sentByUser{
+	float: right;
+	&:after{
+		.clearfixMixin;
+	}
 }
+.sentByServer{
+	float: left;
+	&:after{
+		.clearfixMixin;
+	}
+}
+
 .userMessage{
 	text-align: center;
 	color: white;
@@ -92,11 +118,8 @@ body{
 }
 
 .round{
+	.roundMixin;
 	width: 30px;
-	border-radius: 50%;
-	border: solid 1px @background_beige;
-	overflow: hidden;
-	float: left;
 	img {
 		height: 30px;
 	    min-width: 86%;
@@ -146,5 +169,71 @@ body{
 }
 .no{
 	.buttonMixin;
+	float: right;
+}
+.payment{
+	width: 100%;
+	background-color: white;
+	color: @purple_text;
+	font-size: 1.1em;
+}
+.paymentHeading{
+	background-color: @orange_background;
+	font-size: 1.5em;
+	font-weight: bold;
+	padding: 5px 10px;
+	height: 135px;
+	margin-bottom: 45px;
+}
+
+.bigRound{
+	border-radius: 50%;
+	border: 2px solid @background_beige;
+	overflow: hidden;
+	width: 75px;
+	height: 75px;
+	margin: auto;
+	img{
+		margin: auto;
+		display: block;
+		width: 75px;
+	}
+}
+.whiteText{
+	color: white;
+}
+.paymentFrom{
+	padding: 0px 15px;
+}
+.paymentAccountInfo{
+	padding: 10px 15px;
+}
+.paymentAccountLabels{
+	display: inline-block;
+	width: 35%;
+	color: @light_purple_text;
+}
+.paymentAccountData{
+	display: inline-block;
+	width: 35%;
+	color: @light_purple_text;
+}
+.paymentOptions{
+	padding: 10px 15px;
+	margin-bottom: 10px;
+	&:after{
+		.clearfixMixin;
+	}
+}
+.payNow{
+	.buttonMixin;
+	width: 45%;
+	padding: 5px 0px;
+	float: left;
+}
+.cancel{
+	.buttonMixin;
+	width: 45%;
+	padding: 5px 0px;
 	float: right;
 }

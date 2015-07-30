@@ -1,6 +1,20 @@
 body {
   font-family: Helvetica, sans-serif;
 }
+#content {
+  width: 350px;
+  margin: auto;
+  background-color: #f7f2eb;
+  padding: 20px;
+}
+#content:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
 .speachBubbleAfterMixin {
   content: "";
   position: absolute;
@@ -13,6 +27,7 @@ body {
   background-color: #9f92a4;
   line-height: 30px;
   cursor: pointer;
+  text-align: center;
 }
 .userSpeachBubbleMixin {
   content: "";
@@ -33,6 +48,12 @@ body {
   right: 98%;
   top: 0;
 }
+.roundMixin {
+  border-radius: 50%;
+  border: solid 1px #f7f2eb;
+  overflow: hidden;
+  float: left;
+}
 .clearfixMixin {
   visibility: hidden;
   display: block;
@@ -41,9 +62,27 @@ body {
   clear: both;
   height: 0;
 }
-#content {
-  background-color: #f7f2eb;
-  padding: 20px;
+.sentByUser {
+  float: right;
+}
+.sentByUser:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.sentByServer {
+  float: left;
+}
+.sentByServer:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
 }
 .userMessage {
   text-align: center;
@@ -97,11 +136,11 @@ body {
   border-top: solid 2px #f7f2eb;
 }
 .round {
-  width: 30px;
   border-radius: 50%;
   border: solid 1px #f7f2eb;
   overflow: hidden;
   float: left;
+  width: 30px;
 }
 .round img {
   height: 30px;
@@ -167,6 +206,7 @@ body {
   background-color: #9f92a4;
   line-height: 30px;
   cursor: pointer;
+  text-align: center;
   float: left;
 }
 .no {
@@ -175,5 +215,86 @@ body {
   background-color: #9f92a4;
   line-height: 30px;
   cursor: pointer;
+  text-align: center;
+  float: right;
+}
+.payment {
+  width: 100%;
+  background-color: white;
+  color: #370141;
+  font-size: 1.1em;
+}
+.paymentHeading {
+  background-color: #ffb121;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 5px 10px;
+  height: 135px;
+  margin-bottom: 45px;
+}
+.bigRound {
+  border-radius: 50%;
+  border: 2px solid #f7f2eb;
+  overflow: hidden;
+  width: 75px;
+  height: 75px;
+  margin: auto;
+}
+.bigRound img {
+  margin: auto;
+  display: block;
+  width: 75px;
+}
+.whiteText {
+  color: white;
+}
+.paymentFrom {
+  padding: 0px 15px;
+}
+.paymentAccountInfo {
+  padding: 10px 15px;
+}
+.paymentAccountLabels {
+  display: inline-block;
+  width: 35%;
+  color: #a99dad;
+}
+.paymentAccountData {
+  display: inline-block;
+  width: 35%;
+  color: #a99dad;
+}
+.paymentOptions {
+  padding: 10px 15px;
+  margin-bottom: 10px;
+}
+.paymentOptions:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.payNow {
+  width: 90px;
+  height: 30px;
+  background-color: #9f92a4;
+  line-height: 30px;
+  cursor: pointer;
+  text-align: center;
+  width: 45%;
+  padding: 5px 0px;
+  float: left;
+}
+.cancel {
+  width: 90px;
+  height: 30px;
+  background-color: #9f92a4;
+  line-height: 30px;
+  cursor: pointer;
+  text-align: center;
+  width: 45%;
+  padding: 5px 0px;
   float: right;
 }

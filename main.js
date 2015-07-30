@@ -29,3 +29,17 @@ var isThisATemplate = Handlebars.templates['isThisATmpl'];
 var isThisAContext = { 'query': "recurring payment"};
 
 $('#content').append(isThisATemplate(isThisAContext));
+
+var paymentTemplate = Handlebars.templates['paymentTmpl'];
+
+var paymentContext = {
+	'amount': "$10,000",
+	'person': "John Devivo (Mobile)",
+	"url": "images/emptyContact.jpg",
+	'account': 'Day to Day',
+	'accountNumber': "123456789",
+	'bankName': "Citibank",
+	'fcs': "123456",
+};
+
+$('#content').append(paymentTemplate(paymentContext));
