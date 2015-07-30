@@ -1,0 +1,20 @@
+<div class='payment'>
+	<div>You're ready to pay {{amount}} to {{person}}
+		<div class='bigRound><img {{#if this.url}} src={{this.url}} {{else}} src='images/emptyContact.jpg' {{/if}}></img></div>
+	</div> 
+	<div class='paymentFrom'>From {{account}}</div>
+	<div class='paymentAccountInfo'>
+		<div class='paymentAccountLabels'>
+			<div>A/C#:</div>
+			<div>Bank Name:</div>
+			<div>FCS Code:</div>
+		</div>
+		<div class='paymentAccountData'>
+			<div>{{accountNumber}}</div>
+			<div>{{bankName}}</div>
+			<div>{{fcs}}</div>
+		</div>
+	</div>
+	<div class='payNow'>Pay Now</div>
+	<div class='cancel'>Cancel</div>
+</div >

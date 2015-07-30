@@ -7,6 +7,13 @@ body {
   display: block;
   border-style: solid;
 }
+.buttonMixin {
+  width: 90px;
+  height: 30px;
+  background-color: #9f92a4;
+  line-height: 30px;
+  cursor: pointer;
+}
 .userSpeachBubbleMixin {
   content: "";
   position: absolute;
@@ -158,15 +165,15 @@ body {
   width: 90px;
   height: 30px;
   background-color: #9f92a4;
-  float: left;
   line-height: 30px;
   cursor: pointer;
+  float: left;
 }
 .no {
   width: 90px;
   height: 30px;
-  line-height: 30px;
   background-color: #9f92a4;
+  line-height: 30px;
   cursor: pointer;
   float: right;
 }

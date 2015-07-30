@@ -17,6 +17,13 @@ body{
 	border-style: solid;
 
 }
+.buttonMixin{
+	width: 90px;
+	height: 30px;
+	background-color: @purple_button_background;
+	line-height: 30px;
+	cursor: pointer;
+}
 .userSpeachBubbleMixin{
 	.speachBubbleAfterMixin;
 	border-width: 0px 25px 10px 0px;
@@ -133,18 +140,11 @@ body{
 	margin-bottom: 10px;
 }
 .yes{
-	width: 90px;
-	height: 30px;
-	background-color: @purple_button_background;
+	.buttonMixin;
 	float: left;
-	line-height: 30px;
-	cursor: pointer;
+	
 }
 .no{
-	width: 90px;
-	height: 30px;
-	line-height: 30px;
-	background-color: @purple_button_background;
-	cursor: pointer;
+	.buttonMixin;
 	float: right;
 }
