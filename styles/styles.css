@@ -125,6 +125,20 @@ body {
   right: 98%;
   top: 0;
 }
+.newPayeeSymbol {
+  border-radius: 50%;
+  border: solid 1px #f7f2eb;
+  overflow: hidden;
+  float: left;
+  color: #18789e;
+  border: solid 2px #18789e;
+  margin-right: 25px;
+  height: 15px;
+  width: 14px;
+  text-align: center;
+  line-height: 12px;
+  margin-left: 6px;
+}
 .whichPersonName {
   margin-bottom: 10px;
 }
@@ -134,6 +148,7 @@ body {
 .possiblePerson {
   padding: 10px 0px;
   border-top: solid 2px #f7f2eb;
+  cursor: pointer;
 }
 .round {
   border-radius: 50%;
@@ -150,6 +165,7 @@ body {
   margin: auto;
 }
 .okPerson {
+  display: none;
   text-align: center;
   width: 200px;
   color: #370141;
@@ -170,6 +186,7 @@ body {
   top: 0;
 }
 .isThisA {
+  display: none;
   width: 200px;
   text-align: center;
   color: #370141;
@@ -219,6 +236,7 @@ body {
   float: right;
 }
 .payment {
+  display: none;
   width: 100%;
   background-color: white;
   color: #370141;

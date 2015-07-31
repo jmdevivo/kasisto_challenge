@@ -1,4 +1,7 @@
 
+/*-------------------------------------------------
+Load the Templates with the appropriate information and append them to the document
+*/
 var userMsgTemplate = Handlebars.templates['userMessageTmpl'];
 
 var context = { "message": "Pay Rashav $10,000"};
@@ -43,3 +46,16 @@ var paymentContext = {
 };
 
 $('#content').append(paymentTemplate(paymentContext));
+//-----------------------------------------
+/*
+Add Action listeners to allow the user to interact with the cards
+*/
+$('.possiblePerson').click(function(){
+	console.log("Action listener firing");
+	$('.okPerson').show();
+	$('.isThisA').show();
+});
+$('.yes').click(function(){
+	$('.payment').show();
+});
+//s$('#content').append(paymentTemplate(paymentContext));
